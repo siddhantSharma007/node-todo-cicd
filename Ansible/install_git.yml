@@ -1,0 +1,8 @@
+---
+- hosts: servers
+  become: yes
+  tasks:
+    - name: Install Git
+      package:
+        name: git
+        state: present
